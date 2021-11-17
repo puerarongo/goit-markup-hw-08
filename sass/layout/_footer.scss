@@ -1,15 +1,11 @@
 .footer {
   color: var(--header-white, white);
   background-color: var(--background-footer-color, black);
-  height: 252px;
   line-height: 1.7;
   /* padding: 60px 0; */
 
   @media screen and (max-width: 480px) {
-    height: 603px;
-    width: 480px;
     text-align: center;
-    display: inline-block;
   }
 
   @media screen and (min-width: 481px) and (max-width: 768px) {

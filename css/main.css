@@ -120,12 +120,11 @@ img {
 }
 
 .container--centering {
-  display: flex;
+  /* display: flex; */
 }
 
 @media screen and (max-width: 480px) {
   .container--centering {
-    display: block;
     padding-top: 60px;
     padding-bottom: 70px;
   }
@@ -278,6 +277,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .header {
+    display: flex;
     height: 60px;
   }
 }
@@ -399,12 +399,11 @@ img {
 /* Burger-Menu */
 .burger-menu {
   display: inline-flex;
-  margin: 0;
+  margin: 0 8px 0 auto;
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  margin-left: auto;
 }
 
 .burgera-menu__item {
@@ -946,17 +945,13 @@ img {
 .footer {
   color: var(--header-white, white);
   background-color: var(--background-footer-color, black);
-  height: 252px;
   line-height: 1.7;
   /* padding: 60px 0; */
 }
 
 @media screen and (max-width: 480px) {
   .footer {
-    height: 603px;
-    width: 480px;
     text-align: center;
-    display: inline-block;
   }
 }
 
