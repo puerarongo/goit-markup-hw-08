@@ -126,6 +126,8 @@ img {
 @media screen and (max-width: 480px) {
   .container--centering {
     display: block;
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
 }
 
@@ -400,6 +402,8 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .burgera-menu__item {
@@ -998,6 +1002,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .footer__feedback {
+    margin-bottom: 60px;
     margin-right: 0;
   }
 }
@@ -1024,6 +1029,7 @@ img {
 @media screen and (max-width: 480px) {
   .network--positioning {
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
