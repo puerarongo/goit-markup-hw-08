@@ -1,11 +1,26 @@
 .client {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
+.client__item {
+  width: calc((100% - 30px) / 2);
+
+  &:not(:nth-child(2n + 2)) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(-n + 4) {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 30px;
+    }
+  }
 }
+
+/* .client__item:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .client__brand {
   display: flex;
@@ -15,7 +30,7 @@
   border: 1px solid var(--social-network-rest, gray);
   border-radius: 4px;
 
-  width: 170px;
+  /* width: 170px; */
   height: 92px;
 
   transition-duration: 250ms;

@@ -12,11 +12,7 @@
 }
 
 .features__item {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  /*width: 270px; */
 
   &::before {
     display: block;
@@ -31,9 +27,13 @@
     background-color: var(--background-team, gray);
   }
 
+  /* &:not(:last-child) {
+    margin-right: 30px; 
+  } */
+
   @media screen and (max-width: 480px) {
-    width: 450px;
-    margin: 0 15px 30px 15px;
+    max-width: 450px;
+    margin-bottom: 30px;
   }
 }
 
