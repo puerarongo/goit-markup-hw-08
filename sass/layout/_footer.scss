@@ -5,7 +5,7 @@
   line-height: 1.7;
   padding: 60px 0;
 
-  @media screen and (max-width: 480px) {
+  /* @media screen and (max-width: 480px) {
     height: 603px;
     width: 480px;
     text-align: center;
@@ -14,7 +14,7 @@
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     height: 463px;
-  }
+  } */
 }
 
 /* Footer Contacts*/
@@ -121,7 +121,6 @@
   outline: none;
 
   @media screen and (max-width: 480px) {
-    width: 450px;
     margin-bottom: 20px;
   }
 }
