@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio (Version 2.1)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- Нормализатор стилей -->
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="container container--flex">
+        <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
+
+        <nav class="nav">
+          <ul class="nav__item">
+            <li><a class="nav__link nav__link--active" href="./index.html">Студия</a></li>
+            <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li>
+            <a class="contacts__item" href="mailto:info@devstudio.com">
+              <svg class="contact__svg contact__svg--envelope-icon">
+                <use
+                  href="./images/svg_directory/svg_sprite.svg#icon-envelope_vector"
+                ></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contacts__item" href="tel:+380961111111"
+              ><svg class="contact__svg contact__svg--smartphone-icon">
+                <use
+                  href="./images/svg_directory/svg_sprite.svg#icon-smartphone_vector"
+                ></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <button class="burger-menu" type="button">
+          <svg class="burgera-menu__item" aria-label="Переключатель мобильного меню">
+            <use class="burger-menu__burger" href="./images/svg_directory/svg_sprite.svg#icon-burger_vector"></use>
+            <use class="burger-menu__cross"
+            href="./images/svg_directory/svg_sprite.svg#icon-modal_cross"
+          ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    
+
+    <!--main -->
+
+    
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container container--centering">
+        <!-- Feedback -->
+        <div class="footer__feedback">
+          <a class="logo" href="#"
+            >Web<span class="logo__footer">Studio</span></a
+          >
+
+          <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+
+          <ul class="footer__contacts">
+            <li>
+              <a class="footer__contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer__contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- /Feedback -->
+
+        <!-- Footer__Network -->
+        <div class="footer-network">
+          <h3 class="features__title features__title--positioning">присоединяйтесь</h3>
+          <ul class="network network--positioning">
+            <li class="network__into">
+              <a class="network__link" href="#">
+                <svg class="network__svg network__svg--positioning">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network__into">
+              <a class="network__link" href="#">
+                <svg class="network__svg network__svg--positioning">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network__into">
+              <a class="network__link" href="#">
+                <svg class="network__svg network__svg--positioning">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network__into">
+              <a class="network__link" href="#">
+                <svg class="network__svg network__svg--positioning">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form__footer">
+          <h3 class="features__title features__title--positioning ">Подпишитесь на рассылку</h3>
+          <form class="form__footer-item"
+            <label>
+              <input
+                class="form-mail__footer"
+                name="email__footer"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="main__button main__button--flex" type="submit">
+              Подписаться<svg class="form-footer__svg">
+                <use
+                  href="./images/svg_directory/svg_sprite.svg#icon-telegram_vector"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- /container-->
+    </footer>
+
+    <!-- JS Scripts -->
+
+    <script src="./modal.js"></script>
+  </body>
+</html>

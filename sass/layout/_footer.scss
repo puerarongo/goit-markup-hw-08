@@ -1,0 +1,144 @@
+.footer {
+  color: var(--header-white, white);
+  background-color: var(--background-footer-color, black);
+  height: 252px;
+  line-height: 1.7;
+  padding: 60px 0;
+
+  @media screen and (max-width: 480px) {
+    height: 603px;
+    width: 480px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    height: 463px;
+  }
+}
+
+/* Footer Contacts*/
+
+.footer__contacts {
+  list-style: none;
+  padding: 0;
+
+  & li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__contact {
+  display: block;
+  text-decoration: none;
+  color: var(--contact-footer-color, white);
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__contact {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--active-linc-color, lightblue);
+  }
+}
+
+/* Footer Feedback */
+
+.footer__feedback {
+  margin-right: 70px;
+
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
+}
+
+.footer-network {
+  margin-right: 85px;
+
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
+}
+
+/* Footer Feedback --positioning*/
+
+.features__title--positioning {
+  margin-bottom: 20px;
+}
+
+.network--positioning {
+  padding: 0;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
+}
+
+.network__link {
+  background: var(--social-network-footer, gray);
+  border-radius: 50%;
+
+  .network--positioning &:hover,
+  .network--positioning &:focus {
+    background: var(--active-linc-color, teal);
+  }
+}
+
+.network__svg--positioning {
+  fill: var(--header-white);
+}
+
+/* Form Footer */
+
+.form__footer-item {
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+.form-mail__footer {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  color: var(--contact-footer-color);
+
+  background-color: var(--invisible);
+  border: 1px solid var(--footer-form-email);
+  border-radius: 4px;
+  outline: none;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+.main__button--flex {
+  display: flex;
+  padding: 10px 29px;
+
+  @media screen and (max-width: 480px) {
+    display: inline-flex;
+  }
+}
+
+.form-footer__svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--header-white, white);
+}

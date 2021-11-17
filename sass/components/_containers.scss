@@ -1,0 +1,33 @@
+/* !!! Containers !!! */
+
+.container {
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.container--flex {
+  display: flex;
+  /* центрирует контент по вертикале */
+  align-items: center;
+}
+
+.container--centering {
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}

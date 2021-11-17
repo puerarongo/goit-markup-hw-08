@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+
+  background-color: var(--header-white, white);
+  border-bottom: 1px solid var(--header-border-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 480px) {
+    height: 60px;
+  }
+}
+
+/* Navigation */
+
+.nav__item {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  & li:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+
+  display: block;
+  padding-top: 32px;
+}
+
+/* Contacts */
+
+.contacts {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  padding: 0;
+  margin-left: auto;
+
+  & li:not(:last-child) {
+    /* всем элементам кроме последнего */
+    margin-right: 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.contacts__item {
+  text-decoration: none;
+  color: var(--text-color, gray);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__svg {
+  margin-right: 10px;
+  fill: var(--social-network-rest, gray);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contacts__item:hover &,
+  .contacts__item:focus & {
+    fill: var(--active-linc-color, lightblue);
+  }
+}
+
+.contact__svg--envelope-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.contact__svg--smartphone-icon {
+  width: 10px;
+  height: 16px;
+}
+
+/* Nav, Contacts --elements condition */
+
+.nav__link,
+.contacts__item {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--active-linc-color, lightblue);
+  }
+}
+
+.nav__link::after {
+  display: block;
+  content: "";
+  margin-top: 28px;
+
+  width: inherit;
+  height: 4px;
+  background-color: var(--active-linc-color);
+  border-radius: 2px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.nav__link--active {
+  color: var(--active-linc-color, lightblue);
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+/* Burger-Menu */
+
+.burger-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-menu__burger {
+  width: 24px;
+  height: 16px;
+}
+
+.burger-menu__cross {
+  width: 19px;
+  height: 19px;
+}

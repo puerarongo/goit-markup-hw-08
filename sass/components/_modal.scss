@@ -1,0 +1,56 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  text-align: center;
+
+  background-color: var(--header-white, white);
+}
+
+.modal__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 8px;
+
+  background-color: var(--header-white, white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__svg {
+  width: 11px;
+  height: 11px;
+  fill: var(--modal-button-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button:hover .modal__svg,
+.modal__button:focus .modal__svg {
+  fill: var(--active-linc-color);
+}
+
+.modal__title {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.15;
+}

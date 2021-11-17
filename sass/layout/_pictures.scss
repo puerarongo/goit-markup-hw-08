@@ -1,0 +1,25 @@
+.pictures {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pictures__item {
+  position: relative; /* без этого атрибута появляются 3px внизу*/
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.pictures__annotation {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--pictures-annotation-color);
+}

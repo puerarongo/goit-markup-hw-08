@@ -1,0 +1,42 @@
+.section {
+  /* margin-bottom: 94px; */
+  padding: 94px 0;
+}
+
+.section--background {
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--header-white);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero_directory/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--background-footer-color, gray);
+
+  height: 600px;
+  padding: 200px 0;
+
+  @media screen and (max-width: 480px) {
+    width: max-content;
+  }
+}
+
+.section--features {
+  padding-bottom: 0;
+}
+
+.section--pictures {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.section--band {
+  background-color: var(--background-team);
+}
