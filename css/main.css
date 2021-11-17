@@ -402,6 +402,11 @@ img {
   background-color: transparent;
 }
 
+.burgera-menu__item {
+  width: 24px;
+  height: 16px;
+}
+
 .burger-menu__burger {
   width: 24px;
   height: 16px;
