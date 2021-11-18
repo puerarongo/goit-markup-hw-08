@@ -133,7 +133,7 @@ img {
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.19;
   color: var(--active-linc-color, lightblue);
@@ -143,7 +143,12 @@ img {
 @media screen and (max-width: 480px) {
   .logo {
     margin-right: 0;
-    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo {
+    margin-right: 88px;
   }
 }
 
@@ -290,10 +295,6 @@ img {
 }
 
 /* Navigation */
-.nav {
-  display: none;
-}
-
 .nav__item {
   list-style: none;
   padding: 0;
