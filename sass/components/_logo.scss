@@ -6,13 +6,7 @@
   line-height: 1.19;
   color: var(--active-linc-color, lightblue);
 
-  margin-right: 93px;
-
-  @media screen and (max-width: 480px) {
-    margin-right: 0;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
 }

@@ -123,7 +123,7 @@ img {
   /* display: flex; */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container--centering {
     padding-top: 60px;
     padding-bottom: 70px;
@@ -137,16 +137,9 @@ img {
   font-weight: bold;
   line-height: 1.19;
   color: var(--active-linc-color, lightblue);
-  margin-right: 93px;
 }
 
-@media screen and (max-width: 480px) {
-  .logo {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
   }
@@ -229,7 +222,7 @@ img {
   padding: 94px 0; */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .section {
     padding: 60px 0;
   }
@@ -248,7 +241,7 @@ img {
   padding: 200px 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .section--background {
     width: max-content;
   }
@@ -258,7 +251,7 @@ img {
   padding-bottom: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .section--pictures {
     display: none;
   }
@@ -306,7 +299,7 @@ img {
   margin-right: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav__item {
     display: none;
   }
@@ -332,7 +325,7 @@ img {
   /* margin-right: 30px; */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
@@ -417,7 +410,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 767px) {
   .burger-menu {
     display: none;
   }
@@ -488,9 +481,16 @@ img {
   padding: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .features {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -512,10 +512,22 @@ img {
   background-color: var(--background-team, gray);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .features__item {
     max-width: 450px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item:not(:nth-child(2n + 2)) {
+    margin-right: 30px;
   }
 }
 
@@ -545,7 +557,7 @@ img {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .features__title {
     text-align: center;
   }
@@ -688,13 +700,26 @@ img {
   width: calc((100% - 30px) / 2);
 }
 
+@media screen and (min-width: 768px) {
+  .client__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+}
+
 .client__item:not(:nth-child(2n + 2)) {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .client__item:nth-child(-n + 4) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client__item:nth-child(3n + 3) {
+    margin-right: 0px;
   }
 }
 
@@ -979,13 +1004,13 @@ img {
   /* padding: 60px 0; */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .footer {
     text-align: center;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 767px) {
   .footer {
     height: 463px;
   }
@@ -1026,7 +1051,7 @@ img {
   margin-right: 70px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .footer__feedback {
     margin-bottom: 60px;
     margin-right: 0;
@@ -1037,7 +1062,7 @@ img {
   margin-right: 85px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .footer-network {
     margin-right: 0;
   }
@@ -1052,7 +1077,7 @@ img {
   padding: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .network--positioning {
     justify-content: center;
     margin-bottom: 60px;
@@ -1078,7 +1103,7 @@ img {
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .form__footer-item {
     display: block;
   }
@@ -1095,7 +1120,7 @@ img {
   outline: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .form-mail__footer {
     max-width: 450px;
     margin-bottom: 20px;
@@ -1107,7 +1132,7 @@ img {
   padding: 10px 29px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .main__button--flex {
     display: inline-flex;
   }

@@ -7,13 +7,24 @@
 .client__item {
   width: calc((100% - 30px) / 2);
 
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+
   &:not(:nth-child(2n + 2)) {
     margin-right: 30px;
   }
 
   &:nth-child(-n + 4) {
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
       margin-bottom: 30px;
+    }
+  }
+
+  &:nth-child(3n + 3) {
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
     }
   }
 }
