@@ -1,0 +1,31 @@
+.burger-contacts {
+  margin-bottom: 64px;
+}
+
+.burger-contacts__into {
+  align-items: center;
+  list-style: none;
+
+  padding: 0;
+  margin-left: auto;
+
+  & li:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.burger-contacts__item {
+  text-decoration: none;
+  color: var(--text-color, gray);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-size: 24px;
+  line-height: 1.17;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* burger-contacts__item:hover and :focus смотреть в _burger__nav */

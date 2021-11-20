@@ -24,7 +24,7 @@
   width: 100%;
 }
 .nav {
-  margin-bottom: 300px;
+  display: none;
 }
 
 .nav__item {
@@ -59,8 +59,9 @@
 
 .contacts {
   @media screen and (max-width: 767px) {
-    margin-bottom: 64px;
+    display: none;
   }
+  display: none;
 }
 
 .contacts__into {
@@ -97,11 +98,6 @@
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (max-width: 767px) {
-    font-size: 24px;
-    line-height: 1.17;
-  }
 }
 
 .contact__svg {

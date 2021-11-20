@@ -1,0 +1,37 @@
+/*  Burger - Nav */
+.burger-nav__item {
+  list-style: none;
+
+  & li:not(:last-child) {
+    margin-right: 50px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.burger-nav__link {
+  text-decoration: none;
+  color: inherit;
+
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+}
+
+.burger-nav__link,
+.burger-contacts__item {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--active-linc-color, lightblue);
+  }
+}
+
+.burger-nav__link--active {
+  color: var(--active-linc-color, lightblue);
+}

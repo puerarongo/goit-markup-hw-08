@@ -5,7 +5,7 @@
 
   @media screen and (max-width: 767px) {
     /*display: none;*/
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
@@ -38,11 +38,12 @@
 }
 
 .burger-network {
-}
-
-.burger-network__list {
   display: flex;
   list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .burger-network__item {

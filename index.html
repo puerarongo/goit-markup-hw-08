@@ -26,25 +26,17 @@
       <div class="container container--flex">
         <nav class="navigation">
           <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
-          
-          <button class="burger-button" type="button" data-burger-open>
-            <svg class="burger-button__item" aria-label="Переключатель мобильного меню">
-              <use class="burger-button__burger" href="./images/svg_directory/svg_sprite.svg#icon-burger_vector"></use>
-          </button>
 
-          <div class="burger-menu is-hidden" data-burger>
-            <button class="burger-menu__button" type="button" data-burger-close>
-              <svg class="burger-menu__icon">
-                <use class="burger-menu__cross" href="./images/svg_directory/svg_sprite.svg#icon-modal_cross"></use>
-              </svg>
-            </button>
-            <div class="nav">
+          <!-- ! Nav ! -->
+          <div class="nav">
               <ul class="nav__item">
                 <li><a class="nav__link nav__link--active" href="./index.html">Студия</a></li>
                 <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
                 <li><a class="nav__link" href="#">Контакты</a></li>
               </ul>
             </div>
+
+            <!-- ! Contacts ! -->
 
             <div class="contacts">
               <ul class="contacts__into">
@@ -65,9 +57,51 @@
                 </li>
               </ul>
             </div>
-            <div class="burger-network">
-              <ul class="burger-network__list">
-                <li class="burger-network__item">
+
+            <!-- ! Burger - Button ! -->
+
+          
+          <button class="burger-button" type="button" data-burger-open>
+            <svg class="burger-button__item" aria-label="Переключатель мобильного меню">
+              <use class="burger-button__burger" href="./images/svg_directory/svg_sprite.svg#icon-burger_vector"></use>
+          </button>
+
+
+          <!-- !Burger - Menu!-->
+
+          <div class="burger-menu is-hidden" data-burger>
+            <button class="burger-menu__button" type="button" data-burger-close>
+              <svg class="burger-menu__icon">
+                <use class="burger-menu__cross" href="./images/svg_directory/svg_sprite.svg#icon-modal_cross"></use>
+              </svg>
+            </button>
+
+            <!-- * Burger - Nav *-->
+            <div class="burger-nav">
+              <ul class="burger-nav__item">
+                <li><a class="burger-nav__link burger-nav__link--active" href="./index.html">Студия</a></li>
+                <li><a class="burger-nav__link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="burger-nav__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+
+            <!-- * Burger - Contacts * -->
+
+            <div class="burger-contacts">
+              <ul class="burger-contacts__into">
+                <li>
+                  <a class="burger-contacts__item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a class="burger-contacts__item" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- * Burger - Network -->
+
+            <ul class="burger-network">
+              <li class="burger-network__item">
                   <a class="burger-network__link">Instagram</a>
                 </li>
                 <li class="burger-network__item">
@@ -79,8 +113,7 @@
                 <li class="burger-network__item">
                   <a class="burger-network__link">LinkedIn</a>
                 </li>
-              </ul>
-            </div>
+            </ul>
         </nav>
       </div>
 
