@@ -1,6 +1,7 @@
 .backdrop {
   position: fixed;
   z-index: 20;
+  overflow-y: scroll;
 
   top: 0;
   width: 100%;
@@ -9,6 +10,12 @@
 }
 
 .backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.burger-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;

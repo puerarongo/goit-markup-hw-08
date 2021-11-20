@@ -24,46 +24,71 @@
 
     <header class="header">
       <div class="container container--flex">
-        <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
+        <nav class="navigation">
+          <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
+          
+          <button class="burger-button" type="button" data-burger-open>
+            <svg class="burger-button__item" aria-label="Переключатель мобильного меню">
+              <use class="burger-button__burger" href="./images/svg_directory/svg_sprite.svg#icon-burger_vector"></use>
+          </button>
 
-        <nav class="nav">
-          <ul class="nav__item">
-            <li><a class="nav__link nav__link--active" href="./index.html">Студия</a></li>
-            <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="nav__link" href="#">Контакты</a></li>
-          </ul>
+          <div class="burger-menu is-hidden" data-burger>
+            <button class="burger-menu__button" type="button" data-burger-close>
+              <svg class="burger-menu__icon">
+                <use class="burger-menu__cross" href="./images/svg_directory/svg_sprite.svg#icon-modal_cross"></use>
+              </svg>
+            </button>
+            <div class="nav">
+              <ul class="nav__item">
+                <li><a class="nav__link nav__link--active" href="./index.html">Студия</a></li>
+                <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="nav__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="contacts">
+              <ul class="contacts__into">
+                <li>
+                  <a class="contacts__item" href="mailto:info@devstudio.com">
+                    <svg class="contact__svg contact__svg--envelope-icon">
+                      <use
+                  href="./images/svg_directory/svg_sprite.svg#icon-envelope_vector"></use>
+                    </svg>info@devstudio.com</a>
+                </li>
+                <li>
+                  <a class="contacts__item" href="tel:+380961111111">
+                    <svg class="contact__svg contact__svg--smartphone-icon">
+                      <use
+                  href="./images/svg_directory/svg_sprite.svg#icon-smartphone_vector">
+                      </use>
+                    </svg>+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+            <div class="burger-network">
+              <ul class="burger-network__list">
+                <li class="burger-network__item">
+                  <a class="burger-network__link">Instagram</a>
+                </li>
+                <li class="burger-network__item">
+                  <a class="burger-network__link">Twitter</a>
+                </li>
+                <li class="burger-network__item">
+                  <a class="burger-network__link">Facebook</a>
+                </li>
+                <li class="burger-network__item">
+                  <a class="burger-network__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
         </nav>
-
-        <ul class="contacts">
-          <li>
-            <a class="contacts__item" href="mailto:info@devstudio.com">
-              <svg class="contact__svg contact__svg--envelope-icon">
-                <use
-                  href="./images/svg_directory/svg_sprite.svg#icon-envelope_vector"
-                ></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contacts__item" href="tel:+380961111111"
-              ><svg class="contact__svg contact__svg--smartphone-icon">
-                <use
-                  href="./images/svg_directory/svg_sprite.svg#icon-smartphone_vector"
-                ></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-
-        <button class="burger-menu" type="button">
-          <svg class="burgera-menu__item" aria-label="Переключатель мобильного меню">
-            <use class="burger-menu__burger" href="./images/svg_directory/svg_sprite.svg#icon-burger_vector"></use>
-            <use class="burger-menu__cross"
-            href="./images/svg_directory/svg_sprite.svg#icon-modal_cross"
-          ></use>
-          </svg>
-        </button>
       </div>
+
+
+
+      </div>
+
+      
     </header>
 
     
@@ -274,6 +299,7 @@
 
     <!-- JS Scripts -->
 
+    <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>
 </html>
