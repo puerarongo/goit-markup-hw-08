@@ -5,14 +5,13 @@
   font-weight: bold;
   line-height: 1.19;
   color: var(--active-linc-color, lightblue);
-
-  @media screen and (min-width: 768px) {
-    margin-right: 88px;
-  }
 }
 
 .logo__header {
   color: var(--title-color, black);
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 }
 
 .logo__footer {

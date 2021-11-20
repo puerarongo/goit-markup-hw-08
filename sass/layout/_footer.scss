@@ -48,11 +48,8 @@
 /* Footer Feedback */
 
 .footer__feedback {
-  margin-right: 70px;
-
   @media screen and (min-width: 480px) {
     margin-bottom: 60px;
-    margin-right: 0;
   }
 }
 
@@ -67,6 +64,7 @@
 /* Footer Feedback --positioning*/
 
 .features__title--positioning {
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -95,11 +93,12 @@
 
 /* Form Footer */
 
-.form__footer-item {
-  display: flex;
+.form__footer {
+}
 
-  @media screen and (min-width: 480px) {
-    display: block;
+.form__footer-item {
+  @media screen and (min-width: 768px) {
+    width: 100%;
   }
 }
 

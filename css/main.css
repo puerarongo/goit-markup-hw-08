@@ -119,14 +119,18 @@ img {
   align-items: center;
 }
 
-.container--centering {
-  /* display: flex; */
-}
-
 @media screen and (min-width: 480px) {
   .container--centering {
     padding-top: 60px;
     padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container--centering {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -139,14 +143,14 @@ img {
   color: var(--active-linc-color, lightblue);
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 .logo__header {
   color: var(--title-color, black);
+}
+
+@media screen and (min-width: 768px) {
+  .logo__header {
+    margin-right: 88px;
+  }
 }
 
 .logo__footer {
@@ -320,9 +324,10 @@ img {
   margin-left: auto;
 }
 
-.contacts li:not(:last-child) {
-  /* всем элементам кроме последнего */
-  /* margin-right: 30px; */
+@media screen and (min-width: 768px) {
+  .contacts li:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -522,6 +527,7 @@ img {
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 60px;
   }
 }
 
@@ -560,6 +566,12 @@ img {
 @media screen and (min-width: 480px) {
   .features__title {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
   }
 }
 
@@ -711,8 +723,14 @@ img {
   margin-right: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .client__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client__item:nth-child(-n + 3) {
     margin-bottom: 30px;
   }
 }
@@ -1047,14 +1065,9 @@ img {
 }
 
 /* Footer Feedback */
-.footer__feedback {
-  margin-right: 70px;
-}
-
 @media screen and (min-width: 480px) {
   .footer__feedback {
     margin-bottom: 60px;
-    margin-right: 0;
   }
 }
 
@@ -1070,6 +1083,7 @@ img {
 
 /* Footer Feedback --positioning*/
 .features__title--positioning {
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -1099,13 +1113,9 @@ img {
 }
 
 /* Form Footer */
-.form__footer-item {
-  display: flex;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .form__footer-item {
-    display: block;
+    width: 100%;
   }
 }
 

@@ -59,8 +59,9 @@
   margin-left: auto;
 
   & li:not(:last-child) {
-    /* всем элементам кроме последнего */
-    /* margin-right: 30px; */
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 
   @media screen and (max-width: 767px) {
