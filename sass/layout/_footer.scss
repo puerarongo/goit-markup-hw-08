@@ -2,6 +2,7 @@
   color: var(--header-white, white);
   background-color: var(--background-footer-color, black);
   line-height: 1.7;
+  text-align: center;
   /* padding: 60px 0; */
 
   @media screen and (min-width: 480px) {
@@ -48,16 +49,12 @@
 /* Footer Feedback */
 
 .footer__feedback {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
 }
 
 .footer-network {
-  margin-right: 85px;
-
-  @media screen and (min-width: 480px) {
-    margin-right: 0;
+  @media screen and (min-width: 768px) {
+    margin-right: 85px;
   }
 }
 
@@ -70,11 +67,8 @@
 
 .network--positioning {
   padding: 0;
-
-  @media screen and (min-width: 480px) {
-    justify-content: center;
-    margin-bottom: 60px;
-  }
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .network__link {
@@ -114,6 +108,9 @@
   border-radius: 4px;
   outline: none;
 
+  max-width: 450px;
+  margin-bottom: 20px;
+
   @media screen and (min-width: 480px) {
     max-width: 450px;
     margin-bottom: 20px;
@@ -121,12 +118,8 @@
 }
 
 .main__button--flex {
-  display: flex;
+  display: inline-flex;
   padding: 10px 29px;
-
-  @media screen and (min-width: 480px) {
-    display: inline-flex;
-  }
 }
 
 .form-footer__svg {

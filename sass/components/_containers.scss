@@ -25,10 +25,8 @@
 }
 
 .container--centering {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
+  padding-top: 60px;
+  padding-bottom: 70px;
 
   @media screen and (min-width: 768px) {
     display: flex;
