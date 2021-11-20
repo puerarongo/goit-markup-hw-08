@@ -22,25 +22,24 @@
 .navigation {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 .nav {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin: 0 auto 0 auto;
 }
 
 .nav__item {
   list-style: none;
-  display: block;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
 
   & li:not(:last-child) {
     margin-right: 50px;
-
-    @media screen and (max-width: 767px) {
-      margin-bottom: 32px;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    /*display: none;*/
   }
 }
 
@@ -48,11 +47,8 @@
   text-decoration: none;
   color: inherit;
 
-  @media screen and (max-width: 767px) {
-    font-size: 40px;
-    line-height: 1.18;
-  }
-  /* padding-top: 32px; */
+  display: block;
+  padding-top: 32px;
 }
 
 /* Contacts */
@@ -61,40 +57,35 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  display: none;
+
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
 .contacts__into {
-  align-items: center;
   list-style: none;
 
-  padding: 0;
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    display: flex;
+  }
 
   & li:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 32px;
-    }
-
-    @media screen and (min-width: 768px) {
+    /* всем элементам кроме последнего */
+    @media screen and (max-width: 1199px) {
       margin-bottom: 10px;
     }
-  }
 
-  @media screen and (max-width: 767px) {
-    /* display: none; */
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 }
 
 .contacts__item {
   text-decoration: none;
   color: var(--text-color, gray);
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
