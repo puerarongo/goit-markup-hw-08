@@ -1,11 +1,22 @@
 .filter {
   list-style: none;
-  justify-content: center;
+  justify-content: left;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 
   & li:not(:last-child) {
     margin-right: 8px;
+  }
+
+  & li:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -24,6 +35,8 @@
   padding: 6px 22px;
   text-align: center;
   border: 1px solid transparent;
+
+  white-space: nowrap;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
