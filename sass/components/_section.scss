@@ -1,9 +1,6 @@
 .section {
-  /* margin-bottom: 94px; 
-  padding: 94px 0; */
-
-  @media screen and (max-width: 767px) {
-    padding: 60px 0;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 }
 

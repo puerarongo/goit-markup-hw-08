@@ -37,6 +37,12 @@
   height: 19px;
 }
 
+.burger-menu__into {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .burger-network {
   display: flex;
   list-style: none;
