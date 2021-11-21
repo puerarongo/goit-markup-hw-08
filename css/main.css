@@ -224,18 +224,48 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--header-white);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_directory/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: var(--background-footer-color, gray);
-  height: 600px;
   padding: 200px 0;
+  background-color: var(--background-footer-color, gray);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Hero */
+  /* Tablet */
+  /* Desktop */
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .section--background {
-    width: max-content;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_directory/hero1.jpg");
+  }
+}
+
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .section--background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_directory/hero1@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 480) {
+  .section--background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_directory/hero2.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section--background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_directory/hero2@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768) {
+  .section--background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_directory/hero3.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section--background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_directory/hero3@2x.jpg");
   }
 }
 

@@ -8,23 +8,79 @@
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--header-white);
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero_directory/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: var(--background-footer-color, gray);
-
-  height: 600px;
   padding: 200px 0;
 
-  @media screen and (min-width: 480px) {
-    width: max-content;
+  background-color: var(--background-footer-color, gray);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Hero */
+
+  @media screen and (max-width: 479px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero_directory/hero1.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/hero_directory/hero1@2x.jpg");
+    }
+  }
+
+  /* Tablet */
+
+  @media screen and (min-width: 480) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero_directory/hero2.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero_directory/hero2@2x.jpg");
+  }
+
+  /* Desktop */
+
+  @media screen and (min-width: 768) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero_directory/hero3.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero_directory/hero3@2x.jpg");
   }
 }
 
