@@ -1016,18 +1016,18 @@ img {
 
 .portfolio__items {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .portfolio__items {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .portfolio__project {
-  width: 370px;
+  max-width: 450px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1045,19 +1045,10 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
-  .portfolio__project {
-    width: 450px;
-    height: 460px;
-    margin: 0 15px 30px 15px;
-  }
-}
-
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
-  width: 370px;
-  height: 294px;
+  max-width: 450px;
 }
 
 .portfolio__window {
