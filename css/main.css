@@ -126,6 +126,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container--centering {
+    padding-bottom: 60px;
+  }
+}
+
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -1221,12 +1227,6 @@ img {
 @media screen and (min-width: 480px) {
   .footer {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .footer {
-    height: 463px;
   }
 }
 
