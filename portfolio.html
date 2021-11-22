@@ -88,20 +88,27 @@
             <!-- p__project1-->
             <li class="portfolio__project">
               <div class="portfolio__thumb">
-                <img
-                  class="portfolio__image"
-                  srcset="
-                  ./images/portfolio_directory/1/img.jpg x1,
-                  ./images/portfolio_directory/1/img@2x.jpg x2,
-                  ./images/portfolio_directory/1/img2.jpg x1,
-                  ./images/portfolio_directory/1/img2@2x.jpg x2,
-                  ./images/portfolio_directory/1/img3.jpg x1,
-                  ./images/portfolio_directory/1/img3@2x.jpg x2
-                  "
-                  src="./images/portfolio_directory/1/img.jpg"
-                  alt="ноутбук"
-                  width="450"
-                />
+                <picture>
+                   <source media="(max-width: 767px)"
+                srcset="./images/portfolio_directory/1/img.webp x1, ./images/portfolio_directory/1/img@2x.webp x2" 
+                type="image/webp">
+              <source media="(max-width: 767px)"
+                srcset="./images/portfolio_directory/1/img.jpg x1, ./images/portfolio_directory/1/img@2x.jpg x2">
+                
+              <source media="(max-width: 1199px)"
+                srcset="./images/portfolio_directory/1/img2.webp x1, ./images/portfolio_directory/1/img2@2x.webp x2" 
+                type="image/webp">
+              <source media="(max-width: 1199px)"
+                srcset="./images/portfolio_directory/1/img2.jpg x1, ./images/portfolio_directory/1/img2@2x.jpg x2">
+
+              <source media="(min-width: 1200px)"
+                srcset="./images/portfolio_directory/1/img3.webp x1, ./images/portfolio_directory/1/img3@2x.webp x2" 
+                type="image/webp">
+              <source media="(min-width: 1200px)"
+                srcset="./images/portfolio_directory/1/img3.jpg x1, ./images/portfolio_directory/1/img3@2x.jpg x2">
+                
+              <img src="#" alt="ноутбук"/>
+                </picture> 
 
                 <div class="portfolio__window">
                   <p>
