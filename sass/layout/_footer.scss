@@ -8,6 +8,10 @@
   @media screen and (min-width: 480px) {
     text-align: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 /* Footer Contacts*/
@@ -59,6 +63,10 @@
 .features__title--positioning {
   text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .network--positioning {
@@ -90,6 +98,9 @@
   @media screen and (min-width: 768px) {
     width: 100%;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .form-mail__footer {
@@ -110,6 +121,10 @@
   @media screen and (min-width: 480px) {
     max-width: 450px;
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
   }
 }
 

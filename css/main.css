@@ -1234,6 +1234,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+}
+
 /* Footer Contacts*/
 .footer__contacts {
   list-style: none;
@@ -1281,6 +1287,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .features__title--positioning {
+    text-align: left;
+  }
+}
+
 .network--positioning {
   padding: 0;
   justify-content: center;
@@ -1308,6 +1320,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form__footer-item {
+    display: flex;
+  }
+}
+
 .form-mail__footer {
   width: 100%;
   margin-right: 12px;
@@ -1325,6 +1343,12 @@ img {
   .form-mail__footer {
     max-width: 450px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-mail__footer {
+    min-width: 358px;
   }
 }
 
