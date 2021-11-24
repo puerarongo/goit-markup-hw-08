@@ -88,9 +88,10 @@
   }
 }
 
-.features__title--color-white {
+.features__title--positining {
   margin: 0;
   color: var(--header-white, white);
+  text-align: center;
 }
 
 .features__text {
