@@ -552,7 +552,7 @@ img {
 
 .burger-menu {
   padding: 48px 40px;
-  background-color: lightblue;
+  background-color: var(--header-white, white);
 }
 
 @media screen and (max-width: 767px) {
