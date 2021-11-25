@@ -18,9 +18,19 @@
 }
 
 .form-modal__list.list__checkbox .form-modal__label {
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
+  font-size: 10px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .form-modal__into {
@@ -107,13 +117,18 @@
   &::before {
     content: "";
     display: block;
-    width: 16px;
-    height: 15px;
+    width: 12px;
+    height: 11px;
     margin-right: 8px;
 
     border: 1px solid var(--modal-button-color, black);
     border-radius: 2px;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 15px;
+    }
   }
 }
 
