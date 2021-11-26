@@ -18,7 +18,8 @@
 }
 
 .features__item {
-  /*width: 270px; */
+  max-width: 450px;
+  margin-bottom: 30px;
 
   &::before {
     display: block;
@@ -33,14 +34,14 @@
     background-color: var(--background-team, gray);
   }
 
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
-    margin-bottom: 30px;
-  }
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
-    margin-bottom: 60px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 0;
+    }
   }
 
   &:not(:nth-child(2n + 2)) {
