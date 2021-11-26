@@ -145,6 +145,18 @@ img {
   color: var(--title-color, black);
 }
 
+@media screen and (min-width: 768px) {
+  .logo__header {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__header {
+    margin-right: 93px;
+  }
+}
+
 .logo__footer {
   color: var(--header-white, white);
 }
@@ -391,7 +403,7 @@ img {
 }
 
 .nav {
-  margin: 0 auto 0 auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -550,11 +562,6 @@ img {
   height: 16px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.burger-button .burger-button__item:hover,
-.burger-button .burger-button__item:focus {
-  fill: crimson;
 }
 
 .burger-button .burger-button:hover .burger-button__item,

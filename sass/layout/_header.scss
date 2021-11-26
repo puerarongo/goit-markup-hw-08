@@ -25,10 +25,11 @@
   align-items: center;
 }
 .nav {
+  margin-right: auto;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
-  margin: 0 auto 0 auto;
 }
 
 .nav__item {
@@ -180,11 +181,6 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .burger-button__item:hover,
-  .burger-button__item:focus {
-    fill: crimson;
   }
 
   .burger-button:hover .burger-button__item,
