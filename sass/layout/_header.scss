@@ -175,16 +175,16 @@
     display: none;
   }
 
-  .burger-button__item {
-    width: 24px;
-    height: 16px;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .burger-button:hover .burger-button__item,
-  .burger-button:focus .burger-button__item {
+  &:hover .burger-button__item,
+  &:focus .burger-button__item {
     fill: var(--active-linc-color);
   }
+}
+
+.burger-button__item {
+  width: 24px;
+  height: 16px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
