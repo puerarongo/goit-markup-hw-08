@@ -117,12 +117,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .container--spacing {
-    padding: 0 452px 0 452px;
-  }
-}
-
 .container--flex {
   display: flex;
   /* центрирует контент по вертикале */
@@ -1180,13 +1174,15 @@ img {
 }
 
 .portfolio__project {
+  /* Для исправления размера карточки, чтоб они были одинаковыми с соседями*/
+  display: flex;
+  flex-direction: column;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /*&:not(:nth-last-child(-n + 2)) {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     }
   } */
-  /* Костыль */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1230,12 +1226,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio__project:first-child .portfolio__item {
-    height: 146px;
-  }
-}
-
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
@@ -1273,8 +1263,8 @@ img {
   border-left: 1px solid var(--portfolio-border-color, gray);
   border-right: 1px solid var(--portfolio-border-color, gray);
   border-bottom: 1px solid var(--portfolio-border-color, gray);
-  /* &:nth-last-child(2) {
-  } */
+  /* Для исправления размера карточки, чтоб они были одинаковыми с соседями*/
+  flex-grow: 1;
 }
 
 .portfolio__title {

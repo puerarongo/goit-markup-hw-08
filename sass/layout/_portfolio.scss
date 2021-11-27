@@ -9,6 +9,10 @@
 }
 
 .portfolio__project {
+  /* Для исправления размера карточки, чтоб они были одинаковыми с соседями*/
+  display: flex;
+  flex-direction: column;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -52,14 +56,6 @@
   &:not(:nth-child(3n + 3)) {
     @media screen and (min-width: 1200px) {
       margin-right: 30px;
-    }
-  }
-
-  /* Костыль */
-
-  &:first-child .portfolio__item {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      height: 146px;
     }
   }
 }
@@ -106,8 +102,9 @@
   border-right: 1px solid var(--portfolio-border-color, gray);
   border-bottom: 1px solid var(--portfolio-border-color, gray);
 
-  /* &:nth-last-child(2) {
-  } */
+  /* Для исправления размера карточки, чтоб они были одинаковыми с соседями*/
+
+  flex-grow: 1;
 }
 
 .portfolio__title {
