@@ -107,6 +107,22 @@ img {
   }
 }
 
+.container--spacing {
+  padding: 0 60px 0 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container--spacing {
+    padding: 0 204px 0 204px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container--spacing {
+    padding: 0 452px 0 452px;
+  }
+}
+
 .container--flex {
   display: flex;
   /* центрирует контент по вертикале */
@@ -269,12 +285,14 @@ img {
 }
 
 .section {
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -331,8 +349,10 @@ img {
   }
 }
 
-.section--features {
-  padding-bottom: 0;
+@media screen and (min-width: 1199px) {
+  .section--features {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -343,23 +363,6 @@ img {
 
 .section--band {
   background-color: var(--background-team);
-  padding: 60px 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .section--band {
-    padding: 94px;
-  }
-}
-
-.section--space {
-  margin-top: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section--space {
-    margin-top: 94px;
-  }
 }
 
 .title {
@@ -721,9 +724,9 @@ img {
 
 /* burger-contacts__item:hover and :focus смотреть в _burger__nav */
 .main__title {
-  font-size: 44px;
+  font-size: 26px;
+  letter-spacing: 1.6;
   font-weight: 900;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
@@ -731,10 +734,10 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .main__title {
-    font-size: 26px;
-    letter-spacing: 1.6;
+    font-size: 44px;
+    letter-spacing: 1.36;
   }
 }
 
@@ -789,7 +792,6 @@ img {
 
 .features__item {
   max-width: 450px;
-  margin-bottom: 30px;
 }
 
 .features__item::before {
@@ -809,9 +811,15 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .features__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+  .features__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1174,6 +1182,10 @@ img {
 .portfolio__project {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /*&:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    }
+  } */
   /* Костыль */
 }
 
@@ -1194,12 +1206,14 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__project:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .portfolio__project:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio__project:not(:nth-last-child(-n + 2)) {
+@media screen and (min-width: 1200px) {
+  .portfolio__project:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
   }
 }

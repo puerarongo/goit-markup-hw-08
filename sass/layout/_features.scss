@@ -19,7 +19,6 @@
 
 .features__item {
   max-width: 450px;
-  margin-bottom: 30px;
 
   &::before {
     display: block;
@@ -38,9 +37,15 @@
     width: calc((100% - 30px) / 2);
   }
 
-  &:nth-last-child(-n + 2) {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-bottom: 0;
+      margin-bottom: 30px;
     }
   }
 

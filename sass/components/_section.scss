@@ -1,7 +1,9 @@
 .section {
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -91,7 +93,9 @@
 }
 
 .section--features {
-  padding-bottom: 0;
+  @media screen and (min-width: 1199px) {
+    padding-bottom: 0;
+  }
 }
 
 .section--pictures {
@@ -102,17 +106,4 @@
 
 .section--band {
   background-color: var(--background-team);
-  padding: 60px 0;
-
-  @media screen and (min-width: 1200px) {
-    padding: 94px;
-  }
-}
-
-.section--space {
-  margin-top: 60px;
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 94px;
-  }
 }

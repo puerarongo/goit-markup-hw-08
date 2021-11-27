@@ -18,6 +18,18 @@
   }
 }
 
+.container--spacing {
+  padding: 0 60px 0 60px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 204px 0 204px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 0 452px 0 452px;
+  }
+}
+
 .container--flex {
   display: flex;
   /* центрирует контент по вертикале */
